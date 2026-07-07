@@ -238,8 +238,8 @@ export default function App() {
                     {/* Real Image of the result */}
                     <div className="relative aspect-square rounded-lg overflow-hidden bg-neutral-100 group">
                       <img 
-                        src="/src/assets/images/luxury_bag_boutique_1783387306260.jpg" 
-                        alt="Mala de trapilho na Boutique" 
+                        src="https://i.postimg.cc/9fy808yN/0922c612e0bce5b5cd35d30eb1fcda19.webp" 
+                        alt="Foto de Produção Real" 
                         referrerPolicy="no-referrer"
                         className="w-full h-full object-cover"
                       />
