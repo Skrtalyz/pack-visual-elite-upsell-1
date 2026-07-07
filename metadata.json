@@ -1,0 +1,6 @@
+{
+  "name": "Pack Visual de Elite",
+  "description": "Página de vendas de Upsell imediato para o Pack Visual de Elite: 100+ Modelos de Luxo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

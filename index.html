@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pack Visual de Elite — Upgrade Exclusivo</title>
+    <!-- Google Fonts: Inter for Apple-style UI, Playfair Display for luxury serif accents -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- UTMify Pixel Tracking Script -->
+    <script>
+      window.pixelId = "6a3c781f556c2a6f790bfc61";
+      var a = document.createElement("script");
+      a.setAttribute("async", "");
+      a.setAttribute("defer", "");
+      a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+      document.head.appendChild(a);
+    </script>
+  </head>
+  <body class="bg-white text-[#1d1d1f] antialiased selection:bg-neutral-200">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+
+    <!-- HOTMART - Sales Funnel Widget -->
+    <!-- Script de Execução e Integração (Bloco 7 & Bloco 8) -->
+    <script src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"></script>
+    <script>
+      // Global initialization helper for Hotmart elements in the page
+      window.initHotmartFunnel = function() {
+        if (typeof checkoutElements !== 'undefined') {
+          try {
+            checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel');
+            console.log('Hotmart Sales Funnel Widget successfully initialized.');
+          } catch (error) {
+            console.error('Error mounting Hotmart Sales Funnel Widget:', error);
+          }
+        } else {
+          console.warn('Hotmart checkoutElements SDK is not loaded yet.');
+        }
+      };
+
+      // Trigger automatic mount once elements are available
+      document.addEventListener('DOMContentLoaded', () => {
+        setTimeout(() => {
+          if (document.getElementById('hotmart-sales-funnel')) {
+            window.initHotmartFunnel();
+          }
+        }, 1000);
+      });
+    </script>
+  </body>
+</html>
+
